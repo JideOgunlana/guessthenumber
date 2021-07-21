@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the number</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Guess the number</h1>
+    </header>
+    <div class="container">
+        <section>
+            <p>Enter a number from <strong>1 to 10 </strong> in the field provided and click guess button</p>
+            <input type="number" min="1" max="10" value=""> 
+        </section>
+        <section>
+            <span hidden id="correct">Yippee 😍 Yippee 👍</span>
+            <span hidden id="incorrect">No 😒😒 No, try again</span>
+        </section>
+        <section>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+
+                    </div>
+                    <div class="flip-card-back">
+                        <p id="card">
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <button onclick="result()">guess</button>
+            <button id="reload">reload</button>
+        </section>
+        
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
