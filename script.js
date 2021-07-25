@@ -26,7 +26,7 @@ function result () {
             flipcardBack.style.backgroundColor = "red";
         }
         flip()
-        btn.setAttribute('disabled', 'disabled')
+        btn.setAttribute('disabled', 'disabled');
     }
     else alert("Enter a valid number")
 }
@@ -39,6 +39,11 @@ function flip () {
 
 
 reload.onclick = function (e) {
-    location.reload()
+    // location.reload();
+    guess.value = "";
+    flipcard.attributes.class.value = "flip-card";
+    correct.setAttribute('hidden', 'hidden');
+    incorrect.setAttribute('hidden', 'hidden');
+    btn.removeAttribute("disabled");  
 }
 
