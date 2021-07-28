@@ -1,4 +1,3 @@
-let number = Math.floor((Math.random() * 10 )) + 1;
 let card = document.getElementById('card');
 let guess = document.querySelector('input');
 let btn = document.querySelector('button');
@@ -8,9 +7,10 @@ let reload = document.getElementById('reload');
 let flipcard = document.querySelector('.flip-card');
 let flipcardBack = document.querySelector('.flip-card-back');
 
-card.innerHTML = number;
 
 function result () {
+    let number = Math.floor((Math.random() * 10 )) + 1;
+    card.innerHTML = number;
     if (guess.value !== "" && (guess.value >= 1 && guess.value <= 10) ) {
         if (guess.value === card.innerHTML)
             {
